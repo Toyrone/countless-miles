@@ -1,0 +1,115 @@
+.home {
+    .header {
+        background: url('assets/img/header.png');
+        background-repeat: no-repeat;
+        min-height: 85vh;
+        background-size: cover;
+        color: $white;
+        position: relative;
+        @media #{$mobile} {
+            min-height: 40rem;
+        }
+    }
+}
+.overlay {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .2);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.nav {
+    padding: 25px 0;
+    &__menu {
+        display: flex;
+        @media #{$mobile} {
+            display: none;
+        }
+    }
+    &__link {
+        padding: 0 1.875rem;
+        font-weight: bold;
+        &:hover {
+            color: $green-light;
+        }
+    }
+    &__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.hero {
+    padding-top: 5.43rem;
+    &__title {
+        font-weight: bold;
+        font-family: $font-bold;
+        font-size: 2.625rem;
+        padding-bottom: .5em;
+        &:after {
+            content: '';
+            background: $white;
+            height: 5px;
+            display: block;
+            width: 100px;
+            margin-top: .5em;
+        }
+    }
+    &__caption {
+        font-size: 1.25rem;
+        padding-bottom: 1em;
+    }
+    &__body {
+        max-width: 50%;
+        @media #{$mobile} {
+            max-width: 100%;
+        }
+    }
+    &__controls {
+        display: flex;
+        align-items: flex-end;
+        padding-top: 5rem;
+        a {
+            border: none;
+            display: inline;
+            color: $white;
+            line-height: 0px;
+        }
+        .progress-level {
+            margin: 0 .5em;
+            width: 120px;
+            border-bottom: 2px solid $white;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1;
+            position: relative;
+            &__active {
+                font-size: 28px;
+                font-weight: bold;
+                position: relative;
+            }
+            .bar {
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 90px;
+                border-bottom: 2px solid $green;
+            }
+            &__total {
+                font-size: .75rem;
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    height: 8px;
+                    width: 1px;
+                    margin-right: 4px;
+                    transform: rotate3D(20deg);
+                    background: $white;
+                }
+            }
+        }
+    }
+}

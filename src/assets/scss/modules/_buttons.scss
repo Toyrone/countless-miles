@@ -1,0 +1,77 @@
+.btn {
+    min-height: 46px;
+    padding: 0 1rem;
+    border-radius: 2px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+    svg {
+        margin-left: 10px;
+    }
+    &__primary {
+        background: $green;
+        color: $white;
+        border-color: $green;
+        height: 56px;
+        padding: 0 4em;
+        text-transform: capitalize;
+        &:hover {
+            background: lighten($green, 3%);
+        }
+        &--alt {
+            color: $green;
+            background: $white;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+        }
+    }
+    &__secondary {
+        font-weight: bold;
+        font-size: 0.75rem;
+        color: $white;
+        border: 1px solid $white;
+        text-transform: uppercase;
+        &:hover {
+            background: $green-lightest;
+            color: $green;
+        }
+    }
+    &__hero {
+        background: $white;
+        color: $green;
+        padding: 0 2.25rem;
+    }
+    &__carousel {
+        border-radius: 50%;
+        border: 1px solid $green;
+        background: $white;
+        height: 18px;
+        width: 18px;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        &:not(:last-of-type) {
+            margin-right: 1em;
+        }
+    }
+    &__play {
+        position: absolute;
+        left: calc(50% - 70px);
+        top: calc(50% - 70px);
+        padding: 0;
+        svg {
+            margin: 0;
+        }
+    }
+    &--inline {
+        border: none;
+        display: inline;
+        box-shadow: none;
+        color: $white;
+        padding: 0;
+        font-size: .875rem;
+    }
+    &--caps {
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+}

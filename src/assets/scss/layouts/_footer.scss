@@ -1,0 +1,60 @@
+.footer {
+    font-size: 1rem;
+    padding-top: 5em;
+    &__logo {
+        margin-bottom: 1.25rem;
+        display: inline-block;
+    }
+    &__links {
+        font-size: .875rem;
+        &__item {
+            padding: .5em 0;
+        }
+    }
+    &__meta {
+        text-align: center;
+        border-top: 1px solid $green-lightest;
+        font-size: 1rem;
+        padding: 1em;
+    }
+    .section__grid {
+        margin-bottom: 3em;
+    }
+    &__primary {
+        grid-column: 1 / 5;
+        margin-bottom: 2rem;
+        .text {
+            font-size:  0.875rem;
+        }
+    }
+    &__social {
+        display: flex;
+        margin-top: 5em;
+        &__links {
+            margin-right: 20px;
+        }
+    }
+    &__section {
+        margin-bottom: 2rem;
+        .title {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 1.25em;
+        }
+        .text {
+            font-size:  0.875rem;
+            margin-bottom: 2em;
+        }
+    }
+}
+
+.company {
+    grid-column: 5 / 7;
+}
+
+.discover {
+    grid-column: 7 / 10;
+}
+.newsletter {
+    grid-column: 10 / 13;
+}
